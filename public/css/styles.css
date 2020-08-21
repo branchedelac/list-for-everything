@@ -1,8 +1,6 @@
 html {
-
 background: #d1dfea;
-background: linear-gradient(330deg, #6897BB 0%, #d1dfea 50%);
-  /* min-height: 1000px; */
+/* background: linear-gradient(330deg, #6897BB 0%, #d1dfea 50%); */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -30,7 +28,7 @@ h2 {
 }
 
 .box {
-max-width:400px;
+  max-width:400px;
   margin: 30px auto;
   background: white;
   border-radius: 5px;
@@ -41,24 +39,33 @@ max-width:400px;
   background-color: #6897BB;
 }
 
-.header-box {
+/* .header-box {
   width: 100%;
   color: #6897BB;
   text-align: left;
-}
+} */
 
-.list-group {
+.navbar {
   list-style-type: none;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 10px 20px;
+  overflow: hidden;
   }
 
-.list-group-item {
-    display: inline-grid;
+.nav-item {
+    float: left;
+    display: block;
     padding: 10px;
     margin-bottom: -1px;
     font-size: 1.2rem;
   }
+
+.nav-item a {
+text-align: center;
+padding: 4px 0;
+display: block;
+
+}
 
 .item {
   min-height: 60px;
@@ -114,6 +121,7 @@ form.item{
   border-color: transparent;
   background-color: #6897BB;
   color: #fff;
+  margin-left: 4px;
 }
 
 .input-small[type="text"] {
@@ -122,8 +130,8 @@ form.item{
   font-size: 1rem;
   font-weight: 200;
   width: 200px;
-  padding: 2px;
-  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
 }
 
@@ -146,7 +154,7 @@ form.item{
 
 .input-small[type="text"]:focus {
   box-shadow: 0 2px 8px #6897BB;
-
+  outline: none;
 }
 
 ::placeholder {
@@ -155,7 +163,6 @@ form.item{
 }
 
 footer {
-  color: white;
-  color: rgba(0, 0, 0, 0.5);
+  color: #6897BB;
   text-align: center;
 }
