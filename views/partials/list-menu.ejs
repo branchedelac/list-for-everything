@@ -1,0 +1,11 @@
+    <ul class="list-group">
+      <% for (list of lists) { %>
+        <li class="list-group-item"><a href="/lists/<%= list.name %>"><%= list.name %></a></li>
+        <% } %>
+        <li class="list-group-item">
+            <form action="/" method="post">
+              <input class="input-small" type="text" name="newList" placeholder="Name your new list!" autocomplete="off">
+              <button class="small-plus" type="submit" name="list">+</button>
+            </form>
+          </li>
+    </ul>

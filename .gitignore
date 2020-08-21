@@ -1,0 +1,9 @@
+# Modules
+
+node_modules
+
+# Deployment
+Procfile
+
+# Environment variables
+.env
